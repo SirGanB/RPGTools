@@ -1,0 +1,118 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Ll]ogFiles/
+[Tt]est[Rr]esults/
+[Aa]pp[Pp]ackages/
+*.appinstaller
+*.appinstaller.bundle
+
+# Churn
+.vscode/
+.idea/
+_ReSharper*/  
+*.[Rr]e[Ss]harper  
+*.DotSettings
+*.DotSettings.user
+*.DotSettings.xml
+
+# Ignore NuGet Packages folder
+[Dd]otNetPackage/
+
+# Ignore User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Web project files
+.publish*
+.terraform
+
+# Rider
+.idea
+*.sln.iml
+
+# macOS
+*.DS_Store
+
+# JetBrains Rider
+.idea/
+
+# Python stuff
+*.py[cod]
+__pycache__/
+*.py[cod]
+__pycache__/
+.pytest_cache/
+cache/
+*.pyc
+*.pyo
+
+# Packages
+*.egg
+*.egg-info/
+dist/
+build/
+
+# VScode
+.vscode/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# VS Code directories
+.vscode/
+.history/
