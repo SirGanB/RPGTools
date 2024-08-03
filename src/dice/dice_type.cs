@@ -1,3 +1,5 @@
+namespace RPGTools.Dice;
+
 public enum DiceType
 {
     D2 = 2,

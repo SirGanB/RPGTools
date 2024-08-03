@@ -6,11 +6,12 @@ namespace RPGTools.Dice
     public static class Roll
     {
         // Method to roll a die with a given type and apply a modifier
-        public static int[] RollDice(
+        public static int[] RollDice
+        (
             DiceType diceType,
             RollType rollType = RollType.Normal,
             int modifier = 0
-            )
+        )
         {
             // Roll the die and apply the modifier
             int roll1 = 0;

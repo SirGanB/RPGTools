@@ -1,4 +1,5 @@
-﻿using RPGTools.Dice;
+﻿using RPGTools.calculators;
+using RPGTools.Dice;
 
 namespace RPGTools
 {
@@ -6,39 +7,37 @@ namespace RPGTools
     {
         static void Main()
         {
-            int[] rolls = [];
+            int value;
 
-            Console.WriteLine("\nNormal Roll");
-            rolls = Roll.RollDice(
-                diceType: DiceType.D20,
-                modifier: 3
+            //Ability Score Calculate Example
+            value = Calculator.CalculateAbilityModifier(
+                abilityScore: 20
             );
 
-            foreach (int roll in rolls) {
-                Console.WriteLine(roll);
-            }
+            Console.WriteLine($"Ability Score Modifier: {value}");
 
-            Console.WriteLine("\nAdvantage Roll");
-            rolls = Roll.RollDice(
-                diceType: DiceType.D20,
-                modifier: 3,
-                rollType: RollType.Advantage
+            //Average Health Points Calculate Example
+            value = Calculator.CalculateHealthPoints(
+                diceType: DiceType.D12,
+                characterLevel: 20,
+                constitutionModifier: 6,
+                isAverage: true
             );
+            Console.WriteLine($"Barbarian HP Average: {value}");
 
-            foreach (int roll in rolls) {
-                Console.WriteLine(roll);
-            }
-
-            Console.WriteLine("\nDisadvantage Roll");
-            rolls = Roll.RollDice(
-                diceType: DiceType.D20,
-                modifier: 3,
-                rollType: RollType.Disadvantage
+            //Normal Health Points Calculate Example
+            value = Calculator.CalculateHealthPoints(
+                diceType: DiceType.D10,
+                characterLevel: 12,
+                constitutionModifier: 3
             );
+            Console.WriteLine($"Fighter HP Roll: {value}");
 
-            foreach (int roll in rolls) {
-                Console.WriteLine(roll);
-            }
+            //Profiency Bonus Calculate Example
+            value = Calculator.CalculateProficiencyBonus(
+                characterLevel: 20
+            );
+            Console.WriteLine($"Profiency Bonus: {value}");
         }
     }
 }
